@@ -7,14 +7,17 @@ public class Ej_4 {
         System.out.println("Inserte el tamaño del cuadrado: ");
         x = entrada.nextInt();
 
-        for(int i = 0;i < x ;i++){
+        for(int i = 1;i <= x ;i++){
 
-            System.out.println();
+            for(int j =1;j<=x;j++){
+                if(i==1 || i==x || j==1 || j==x){
+                    System.out.print("*");
+                }else{
+                    System.out.print(" ");
+                }
 
-            for(int j =0;j<x;j++){
-                System.out.print("*");
             }
-
+                System.out.println();
         }    
     }
 } 
